@@ -1,0 +1,404 @@
+@import "root.css";
+@import "sidebar.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  font-size: 15px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.title {
+  font-size: 24px;
+  color: var(--neutral-50);
+  font-weight: normal;
+}
+
+.sub-title {
+  font-size: 15px;
+  color: var(--white);
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--neutral-300);
+}
+
+.container {
+  margin-left: 280px;
+}
+
+.content {
+  padding: 3rem;
+}
+
+.content .information {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.content .information .donations {
+  padding: 1rem;
+  background-color: var(--background-card);
+  border-radius: 5px;
+  border: 1px solid var(--neutral-300);
+}
+
+.content .information .donations .approve,
+.content .information .donations .pending {
+  padding: 1rem;
+  background-color: var(--background-sub-card);
+  border-radius: 5px;
+}
+
+.content .information .donations .approve h2,
+.content .information .donations .pending h2 {
+  font-size: 15px;
+  color: var(--neutral-50);
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .information .donations .approve h4,
+.content .information .donations .pending h4 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.content .information .donations .approve h4 {
+  color: var(--green-100);
+}
+
+.content .information .donations h2 a,
+.content .information .donations h2 a {
+  font-size: 12px;
+  display: inline-flex;
+  gap: 2px;
+  color: var(--neutral-50);
+  padding: 0.12rem 0;
+  margin-top: 0.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.content .information .donations h2 a i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.content .information .donations h2 a:hover {
+  color: var(--neutral-100);
+}
+.content .information .donations h2 a:hover i {
+  transform: translateX(5px);
+}
+
+.content .information .donations .pending h4 {
+  color: var(--yellow-100);
+}
+
+.content .cards {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.content .cards .card {
+  background-color: var(--background-card);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--neutral-300);
+}
+
+.content .cards .card .card-content {
+  display: flex;
+  align-items: center;
+}
+
+.content .cards .card .card-content i {
+  font-size: 42px;
+  margin-right: 0.5rem;
+  color: var(--neutral-100);
+  padding: 0.5rem;
+  border-radius: 6px;
+  background-color: var(--neutral-400);
+  border: 1px solid var(--neutral-500);
+}
+
+.content .cards .card .card-content h2 {
+  font-size: 16px;
+  color: var(--neutral-100);
+  font-weight: normal;
+}
+
+.content .cards .card .card-content {
+  margin-top: 1rem;
+}
+
+.content .cards .card .card-content p {
+  font-size: 36px;
+  color: var(--neutral-50);
+}
+
+.graphic {
+  background-color: var(--background-card);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--neutral-300);
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+}
+.table thead tr th {
+  font-size: 16px;
+  color: var(--neutral-50);
+  font-weight: normal;
+  padding: 0.5rem;
+  background-color: var(--neutral-300);
+  border-radius: 5px;
+  border: 1px solid var(--neutral-300);
+}
+.table tbody tr td {
+  font-size: 16px;
+  color: var(--neutral-50);
+  font-weight: normal;
+  padding: 0.5rem;
+  background-color: var(--neutral-500);
+  border-radius: 5px;
+  border: 1px solid var(--neutral-300);
+}
+
+.form {
+  padding: 16px;
+  background: var(--neutral-500);
+  border-radius: 6px;
+}
+.form label {
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+  color: var(--neutral-100);
+  margin-bottom: 8px;
+}
+
+.form input:not([type="checkbox"]),
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--neutral-100);
+  border-radius: 2px;
+  background: var(--neutral-300);
+  color: var(--neutral-50);
+}
+
+.form > .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-size: 13px;
+  border-radius: 2px;
+  background-color: var(--neutral-400);
+  width: fit-content;
+}
+form > .checkbox label {
+  margin: 0;
+  color: var(--neutral-50);
+}
+
+.form > .checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--red-100);
+}
+
+.form textarea {
+  height: 100px;
+}
+
+.sliders {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.sliders .slider {
+  background-color: var(--background-card);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--neutral-300);
+}
+
+.sliders .slider img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sliders .slider h2 {
+  font-size: 16px;
+  color: var(--neutral-50);
+  font-weight: normal;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.information .details {
+  padding: 1rem;
+  background-color: var(--background-sub-card);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.information .details p {
+  font-size: 16px;
+  color: var(--neutral-50);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--neutral-400);
+}
+.information .details p span {
+  color: var(--white);
+}
+.information .details img {
+  width: 105px;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: auto auto 1rem;
+}
+.information .action {
+  grid-column: span 2;
+  background-color: var(--background-card);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--neutral-300);
+}
+.information .action .buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.information .action .buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--red-300);
+  background-color: var(--red-400);
+  color: var(--red-50);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.information .action .buttons button:hover {
+  background-color: var(--red-500);
+}
+
+.payment-links {
+  display: flex;
+  padding: 1rem;
+  gap: 0.5rem;
+  justify-content: end;
+  color: var(--neutral-50);
+}
+
+.payment-links ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+
+.form-answer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.form-answer.show {
+  display: flex;
+}
+
+.form-answer .form-answer-content {
+  background: var(--neutral-300);
+  min-width: 500px;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-answer .form-answer-content button[type="button"] {
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: fit-content;
+}
+
+.topic,
+.answer {
+  padding: 0.5rem;
+  background: var(--neutral-300);
+  font-size: 13px;
+  color: var(--white);
+  border-radius: 5px;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.topic span,
+.answer span {
+  display: block;
+  margin: 0.5rem 0 0;
+  text-align: right;
+  font-size: 12px;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--neutral-100);
+}
+.button-answer {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: end;
+  gap: 0.5rem;
+}
+.button-answer button {
+  color: var(--white);
+  background: var(--blue-200);
+  transition: all 0.2s ease-in-out;
+}
+.button-answer button:hover {
+  background: var(--blue-100);
+}

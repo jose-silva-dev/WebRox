@@ -1,0 +1,76 @@
+:root {
+  --container: 962px;
+
+  --background: #130505;
+
+  --neutral-500: #1d1d1d;
+  --neutral-50: #afafaf;
+  --neutral-75: #676565;
+  --neutral-100: #757474;
+  --neutral-150: #141414;
+  --neutral-200: #0f0f0f;
+  --neutral-300: #333333;
+
+  --white: #fff;
+
+  --red-50: #f8d7d7;
+  --red-75: #ff6969;
+  --red-100: #c02222;
+  --red-150: #991a1a;
+  --red-200: #991a1a;
+
+  --blue-50: #007bff;
+  --blue-100: #007bff;
+  --blue-150: #0069d9;
+  --blue-200: #0056b3;
+
+  --yellow-10: #fff3cd;
+  --yellow-100: #ffc107;
+  --yellow-150: #e0a800;
+  --yellow-200: #e0a800;
+
+  --green-50: #d4edda;
+  --green-100: #28a745;
+  --green-150: #218838;
+  --green-200: #218838;
+}
+
+.space-y-1 > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.warning {
+  padding: 16px;
+  background: var(--yellow-10);
+  border-radius: 6px;
+  margin-top: 2rem;
+  font-size: 13px;
+}
+
+.text-success {
+  color: var(--green-100);
+}
+
+.text-danger {
+  color: var(--red-100);
+}
+
+x-cloak {
+  display: none !important;
+}
+
+.error {
+  padding: 1rem;
+  text-align: center;
+}
+.error h1 {
+  font-size: 4rem;
+  color: var(--red-200);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.error p {
+  color: var(--neutral-100);
+  font-size: 18px;
+  letter-spacing: 2px;
+}

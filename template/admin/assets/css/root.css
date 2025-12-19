@@ -1,0 +1,132 @@
+:root {
+  --container: 962px;
+
+  --background: #100d0e;
+  --background-sidebar: #1b191a;
+  --background-card: #1f1f1f;
+  --background-sub-card: #181516;
+
+  --neutral-500: #1d1d1d;
+  --neutral-75: #676565;
+  --neutral-150: #141414;
+  --neutral-200: #0f0f0f;
+  --neutral-300: #333333;
+
+  --white: #fff;
+  --black: #000;
+
+  --neutral-50: #afafaf;
+  --neutral-100: #757474;
+  --neutral-200: #5c5c5c;
+  --neutral-300: #333333;
+  --neutral-400: #292929;
+  --neutral-500: #1d1d1d;
+  --neutral-600: #171717;
+  --neutral-700: #141414;
+  --neutral-800: #111111;
+  --neutral-900: #0f0f0f;
+
+  --red-50: #f8d7d7;
+  --red-75: #ff6969;
+  --red-100: #c02222;
+  --red-200: #991a1a;
+  --red-300: #661414;
+  --red-400: #4d1212;
+  --red-500: #330a0a;
+
+  --blue-50: #007bff;
+  --blue-100: #007bff;
+  --blue-200: #0056b3;
+
+  --yellow-10: #fff3cd;
+  --yellow-100: #ffc107;
+  --yellow-200: #e0a800;
+
+  --green-50: #d4edda;
+  --green-100: #28a745;
+  --green-200: #218838;
+}
+
+.space-y-1 > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.space-y-2 > *:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.space-y-3 > *:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.space-y-4 > *:not(:first-child) {
+  margin-top: 4rem;
+}
+
+.warning {
+  padding: 16px;
+  background: var(--yellow-10);
+  border-radius: 6px;
+  margin-top: 2rem;
+  font-size: 13px;
+}
+
+.text-success {
+  color: var(--green-100);
+}
+
+.text-danger {
+  color: var(--red-100);
+}
+
+.text-warning {
+  color: var(--yellow-100);
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  text-transform: capitalize;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-primary {
+  background-color: var(--neutral-200);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--neutral-300);
+}
+
+.btn-warning {
+  background-color: var(--yellow-100);
+  color: var(--black);
+}
+
+.btn-warning:hover {
+  background-color: var(--yellow-200);
+}
+
+.btn-danger {
+  background-color: var(--red-100);
+  color: var(--white);
+}
+
+.btn-danger:hover {
+  background-color: var(--red-200);
+}
+
+.btn i {
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}

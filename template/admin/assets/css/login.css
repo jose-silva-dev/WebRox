@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --red-200: #ff4d4f;
+  --neutral-150: #262626;
+  --white: #fff;
+}
+
+body {
+  background: radial-gradient(circle, #1a1a1a 0%, #050505 100%);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.login__container {
+  background: rgba(15, 15, 15, 0.95);
+  border: 2px solid var(--neutral-150);
+  position: relative;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8),
+    inset 0 0 15px rgba(201, 168, 106, 0.1);
+  border-radius: 4px;
+}
+
+/* Enfeite em cima que lembra UI de MMORPG */
+.login__ornament-top {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--red-200), transparent);
+}
+
+.login__container__header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login__logo {
+  max-width: 180px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 10px rgba(201, 168, 106, 0.3));
+}
+
+.login__container__header h1 {
+  font-size: 1.8rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.login__container__header p {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Formulário */
+.login__group {
+  margin-bottom: 20px;
+}
+
+.login__group label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: var(--red-200);
+  font-weight: 600;
+}
+
+.login__group label i {
+  margin-right: 5px;
+}
+
+.login__group input {
+  width: 100%;
+  padding: 12px 15px;
+  background: #151515;
+  border: 1px solid var(--red-200);
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.login__group input:focus {
+  border-color: var(--red-200);
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+  outline: none;
+}
+
+/* Botão Estilo "Stone/Gold" */
+.btn-mu {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(180deg, #c96a6a 0%, #843232 100%);
+  border: 1px solid #444;
+  cursor: pointer;
+  transition: transform 0.1s, filter 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-mu span {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1rem;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.btn-mu:hover {
+  filter: brightness(1.2);
+}
+
+.btn-mu:active {
+  transform: scale(0.98);
+}
+
+.login__footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.login__footer a {
+  color: #666;
+  font-size: 0.8rem;
+  transition: color 0.3s;
+}
+
+.login__footer a:hover {
+  color: var(--red-200);
+}
