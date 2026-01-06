@@ -45,22 +45,25 @@
   --green-50: #d4edda;
   --green-100: #28a745;
   --green-200: #218838;
+
+  --orange-100: #ff8c00;
+  --orange-200: #e67e00;
 }
 
 .space-y-1 > *:not(:first-child) {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
 }
 
 .space-y-2 > *:not(:first-child) {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .space-y-3 > *:not(:first-child) {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .space-y-4 > *:not(:first-child) {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 
 .warning {
@@ -84,47 +87,92 @@
 }
 
 .btn {
-  padding: 8px 12px;
+  padding: 10px 16px;
   border-radius: 6px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
   outline: none;
   display: inline-flex;
   text-transform: capitalize;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
+  transition: all 0.2s ease;
+  letter-spacing: -0.01em;
+  border: 1px solid transparent;
 }
 
 .btn-primary {
-  background-color: var(--neutral-200);
+  background-color: var(--neutral-400);
   color: var(--white);
+  border-color: var(--neutral-300);
 }
 
 .btn-primary:hover {
   background-color: var(--neutral-300);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .btn-warning {
   background-color: var(--yellow-100);
   color: var(--black);
+  border-color: var(--yellow-200);
 }
 
 .btn-warning:hover {
   background-color: var(--yellow-200);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
 }
 
 .btn-danger {
   background-color: var(--red-100);
   color: var(--white);
+  border-color: var(--red-200);
 }
 
 .btn-danger:hover {
   background-color: var(--red-200);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(192, 34, 34, 0.3);
+}
+
+.btn-success {
+  background-color: var(--green-100);
+  color: var(--white);
+  border-color: var(--green-200);
+}
+
+.btn-success:hover {
+  background-color: var(--green-200);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--neutral-400);
+  color: var(--white);
+  border-color: var(--neutral-300);
+}
+
+.btn-secondary:hover {
+  background-color: var(--neutral-300);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12px;
 }
 
 .btn i {
   font-size: 14px;
+}
+
+.btn-sm i {
+  font-size: 12px;
 }
 
 .hidden {

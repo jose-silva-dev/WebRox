@@ -27,7 +27,9 @@
             <?php endforeach; ?>
         <?php else: ?>
             <tr>
-                <td colspan="2">Nenhum staff encontrado</td>
+                <td colspan="2" class="warning" style="margin: 0; background: transparent; border: none; padding: 1rem;">
+                    Nenhum staff encontrado
+                </td>
             </tr>
         <?php endif; ?>
     </tbody>

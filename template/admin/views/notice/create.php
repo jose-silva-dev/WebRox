@@ -4,11 +4,23 @@
 <?= $this->end(); ?>
 
 <div class="space-y-1">
-    <h1 class="title">Adicionar Notícia</h1>
-
-    <a href="<?= route("admin.notice") ?>" class="btn btn-primary"><i class="ph ph-list"></i> Todas as notíciais</a>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h1 class="title">Adicionar Notícia</h1>
+        <?php if (!empty($fromPlugin)): ?>
+            <a href="<?= route("admin/plugins/manage?plugin=notice") ?>" class="btn btn-secondary">
+                <i class="ph ph-arrow-left"></i> Voltar ao Plugin
+            </a>
+        <?php else: ?>
+            <a href="<?= route("admin.notice") ?>" class="btn btn-secondary">
+                <i class="ph ph-arrow-left"></i> Voltar
+            </a>
+        <?php endif; ?>
+    </div>
 
     <form action="<?= route("admin.notice.store") ?>" method="post" class="form space-y-2">
+        <?php if (!empty($fromPlugin)): ?>
+            <input type="hidden" name="from_plugin" value="notice">
+        <?php endif; ?>
         <div>
             <label for="title">Título</label>
             <input type="text" name="title" id="title" placeholder="Digite o título da notícia" required>
@@ -17,6 +29,16 @@
         <div>
             <label for="description">Descrição</label>
             <input type="text" name="description" id="description" placeholder="Digite a descrição da notícia" required>
+        </div>
+
+        <div>
+            <label for="image">Imagem (URL) - Opcional</label>
+            <input type="url" name="image" id="image" placeholder="https://exemplo.com/imagem.jpg">
+        </div>
+
+        <div>
+            <label for="video">Vídeo (URL) - Opcional</label>
+            <input type="url" name="video" id="video" placeholder="https://www.youtube.com/watch?v=... ou https://exemplo.com/video.mp4">
         </div>
 
         <div>

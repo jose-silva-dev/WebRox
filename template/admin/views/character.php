@@ -2,6 +2,7 @@
 
 <div class="space-y-1">
     <form action="<?= route("admin.character.search") ?>" method="post" class="form space-y-2">
+        <?= csrf_field() ?>
         <div>
             <label for="character">Buscas Personagem</label>
             <input type="text" name="character" id="character" placeholder="Digite o nome do personagem" value="<?= $character ?? "" ?>" required>
@@ -23,6 +24,7 @@
         <div class="action">
             <div>
                 <form action="<?= route("admin.character.update.data.$character") ?>" method="post" class="form space-y-1">
+                    <?= csrf_field() ?>
                     <div class="sub-title">Atualizar Dados</div>
                     <div>
                         <label for="class">Classe</label>

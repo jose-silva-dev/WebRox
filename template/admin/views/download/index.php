@@ -4,6 +4,7 @@
     <h1 class="title">Downloads</h1>
 
     <a href="<?= route("admin.download.create") ?>" class="btn btn-primary"><i class="ph ph-plus"></i> Adicionar novo Download</a>
+    <a href="<?= route("admin.additional-download") ?>" class="btn btn-primary"><i class="ph ph-plus"></i> Gerenciar Downloads Adicionais</a>
 
     <?php if ($downloads): ?>
         <table class="table">

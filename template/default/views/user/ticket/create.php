@@ -10,6 +10,7 @@
 </div>
 
 <form action="<?= route("user.ticket.store") ?>" class="form" method="POST">
+    <?= csrf_field() ?>
     <div>
         <label for="title">Assunto</label>
         <input type="text" id="title" name="title" required maxlength="80">

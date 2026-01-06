@@ -8,6 +8,7 @@
 <?= $this->insert('user/partials/menu') ?>
 
 <form action="<?= route('user.password.update') ?>" class="form" method="post">
+    <?= csrf_field() ?>
     <div>
         <label for="old_password">Senha Antiga</label>
         <input type="password" id="old_password" name="old_password" required maxlength="50">

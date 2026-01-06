@@ -1,6 +1,6 @@
 /**
  * PlayStackAlert Plugin - Custom Alert/Modal Library for Web Applications
- * * @version 1.0.0
+ * * @version 2.0.0
  * @author Play Stack
  * @company Play Stack Development
  * @profile https://devkavod.com.br/profile/play-stack

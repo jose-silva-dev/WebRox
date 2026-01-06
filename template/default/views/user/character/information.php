@@ -2,7 +2,7 @@
 
 
 <div class="web-title">
-    Informação: <span><?= $character->name ?></span>
+    Informação: <span><?= e($character->name) ?></span>
 </div>
 
 <div class="character-info space-y-1">

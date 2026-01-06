@@ -1,5 +1,21 @@
 <?= $this->layout('components/layouts/admin') ?>
 
+<?php if ($installExists ?? false): ?>
+<div style="background: #fff3cd; border: 2px solid #ffc107; border-left: 4px solid #ff9800; border-radius: 6px; padding: 16px 20px; margin-bottom: 24px; position: relative; z-index: 1000;">
+    <div style="display: flex; align-items: flex-start; gap: 12px;">
+        <div style="flex: 1;">
+            <strong style="color: #856404; font-size: 16px; display: block; margin-bottom: 8px;">
+                ⚠️ Aviso de Segurança Importante
+            </strong>
+            <p style="color: #856404; margin: 0; font-size: 14px; line-height: 1.6;">
+                A pasta <code style="background: rgba(133, 100, 4, 0.15); padding: 4px 8px; border-radius: 4px; color: #856404; font-family: 'Courier New', monospace; font-size: 13px;">/install</code> ainda existe no servidor. 
+                Por segurança, você <strong>DEVE remover ou renomear esta pasta</strong> imediatamente após a instalação para evitar que outras pessoas possam reinstalar ou acessar o sistema.
+            </p>
+        </div>
+    </div>
+</div>
+<?php endif; ?>
+
 <div class="information">
     <div class="donations space-y-1">
         <div class="approve">
@@ -21,7 +37,7 @@
         <?= $this->insert('components/card', ['title' => 'Jogadores Online', 'value' => $playersOnline, 'icon' => 'ph-users-three']) ?>
         <?= $this->insert('components/card', ['title' => 'Total de Contas', 'value' => $totalAccounts, 'icon' => 'ph-user']) ?>
         <?= $this->insert('components/card', ['title' => 'Total de Personagens', 'value' => $totalCharacters, 'icon' => 'ph-users']) ?>
-        <?= $this->insert('components/card', ['title' => 'Total de Guilds', 'value' => $totalGuilds, 'icon' => 'ph-shield']) ?>getPlayersOnline
+        <?= $this->insert('components/card', ['title' => 'Total de Guilds', 'value' => $totalGuilds, 'icon' => 'ph-shield']) ?>
     </div>
 </div>
 

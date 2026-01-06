@@ -10,9 +10,9 @@
         <?php endforeach; ?>
     <?php else: ?>
         <li>
-            <a href="">
-                <strong>Nenhuma notícia encontrada</strong>
-            </a>
+            <div class="warning" style="margin: 0;">
+                Nenhuma notícia encontrada
+            </div>
         </li>
     <?php endif; ?>
 </ul>

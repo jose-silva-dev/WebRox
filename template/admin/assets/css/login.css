@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.01em;
 }
 :root {
   --red-200: #ff4d4f;

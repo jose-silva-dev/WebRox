@@ -1,80 +1,51 @@
-<?php
+<?php //00507
+// 14.0 83
+if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
 
-return [
-    0 => [
-        'name'       => 'Dark Wizard',
-        'short_name' => 'DW',
-    ],
-    1 => [
-        'name'       => 'Soul Master',
-        'short_name' => 'SM',
-    ],
-    2 => [
-        'name'       => 'Grand Master',
-        'short_name' => 'GM',
-    ],
-    16 => [
-        'name'       => 'Dark Knight',
-        'short_name' => 'DK',
-    ],
-    17 => [
-        'name'       => 'Blade Knight',
-        'short_name' => 'BK',
-    ],
-    18 => [
-        'name'       => 'Blade Master',
-        'short_name' => 'BM',
-    ],
-    32 => [
-        'name'       => 'Fairy Elf',
-        'short_name' => 'FE',
-    ],
-    33 => [
-        'name'       => 'Muse Elf',
-        'short_name' => 'ME',
-    ],
-    34 => [
-        'name'       => 'High Elf',
-        'short_name' => 'HE',
-    ],
-    48 => [
-        'name'       => 'Magic Gladiator',
-        'short_name' => 'MG',
-    ],
-    50 => [
-        'name'       => 'Duel Master',
-        'short_name' => 'DM',
-    ],
-    64 => [
-        'name'       => 'Dark Lord',
-        'short_name' => 'DL',
-    ],
-    66 => [
-        'name'       => 'Lord Emperor',
-        'short_name' => 'LE',
-    ],
-    80 => [
-        'name'       => 'Summoner',
-        'short_name' => 'SU',
-    ],
-    81 => [
-        'name'       => 'Bloody Summoner',
-        'short_name' => 'BS',
-    ],
-    82 => [
-        'name'       => 'Dimension Master',
-        'short_name' => 'DIM',
-    ],
-    96 => [
-        'name'       => 'Rage Fighter',
-        'short_name' => 'RF',
-    ],
-    97 => [
-        'name'       => 'Fist Master',
-        'short_name' => 'FM',
-    ],
-    98 => [
-        'name'       => 'Fist Master',
-        'short_name' => 'FM',
-    ],
-];
+?>
+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
+RcQmSxXrNZah0cgAiUwEsGa=

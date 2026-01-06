@@ -16,15 +16,21 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 8px 12px;
-  border-radius: 15px;
+  padding: 10px 14px;
+  border-radius: 8px;
   color: var(--neutral-50);
   background: var(--neutral-300);
   justify-content: space-between;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  border: 1px solid transparent;
 }
 
 .sidebar ul li a:hover {
   background-color: var(--neutral-400);
+  color: var(--white);
+  transform: translateX(4px);
+  border-color: var(--neutral-300);
 }
 
 .sidebar ul li a span {

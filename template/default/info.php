@@ -2,7 +2,7 @@
 
 return [
     'name'      => 'Web RoxMu',
-    'version'   => '1.0.0',
+    'version'   => '2.0.0',
     'path'      => 'default',
-    'copyright' => 'Copyright (c) 2023 RoxMu',
+    'copyright' => 'Copyright (c) 2026 RoxMu',
 ];

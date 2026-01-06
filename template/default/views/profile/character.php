@@ -20,7 +20,10 @@
             <div>
                 <p>Nome: <span><?= $character->name ?></span></p>
                 <p>Classe: <span><?= resolve('Geral')->getClass($character->class)->name ?></span></p>
-                <p>Mapa: <span><?= resolve('Geral')->getMap($character->mapnumber)->name ?> (x: <?= $character->mapposx ?>, y: <?= $character->mapposy ?>)</span></p>
+                <p>Mapa: <span><?php 
+                    $map = resolve('Geral')->getMap($character->mapnumber ?? 0);
+                    echo isset($map->name) ? $map->name : 'Mapa Desconhecido';
+                ?> (x: <?= $character->mapposx ?? 0 ?>, y: <?= $character->mapposy ?? 0 ?>)</span></p>
                 <p>Nível: <span><?= resolve('Geral')->getFormatNumber($character->level) ?></span></p>
                 <p>Guilda: <span>
                         <?php if ($character->guild): ?>
@@ -39,7 +42,10 @@
                 <?php if ($character->class == 64 || $character->class == 65): ?>
                     <p>Comando: <span><?= resolve('Geral')->getFormatNumber($character->leadership) ?></span></p>
                 <?php endif; ?>
-                <p>Localização: <span><?= resolve('Geral')->getMap($character->mapnumber)->name ?> (x: <?= $character->mapposx ?>, y: <?= $character->mapposy ?>)</span></p>
+                <p>Localização: <span><?php 
+                    $map = resolve('Geral')->getMap($character->mapnumber ?? 0);
+                    echo isset($map->name) ? $map->name : 'Mapa Desconhecido';
+                ?> (x: <?= $character->mapposx ?? 0 ?>, y: <?= $character->mapposy ?? 0 ?>)</span></p>
             </div>
         </div>
     </div>

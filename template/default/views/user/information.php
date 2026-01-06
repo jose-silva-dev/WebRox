@@ -11,20 +11,25 @@
     <tbody>
         <tr>
             <td>Nome</td>
-            <td><?= resolve('User')->getUsername() ?></td>
+            <td><?= e(resolve('User')->getUsername()) ?></td>
         </tr>
         <tr>
             <td>Email</td>
-            <td><?= resolve('User')->getEmail() ?></td>
+            <td><?= e(resolve('User')->getEmail()) ?></td>
         </tr>
+        <td>Cash</td>
+    <td><?= resolve('User')->getCash() ?></td>
+</tr>
         <tr>
             <td>VIP</td>
             <td><?= resolve('User')->getVip() ?></td>
         </tr>
+        <?php if (resolve('User')->getExpireVip() !== null): ?>
         <tr>
             <td>Expiração do VIP</td>
             <td><?= resolve('User')->getExpireVip() ?></td>
         </tr>
+        <?php endif; ?>
     </tbody>
 </table>
 
