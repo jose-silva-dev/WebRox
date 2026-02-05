@@ -1,0 +1,80 @@
+
+.note-editor.note-frame .note-toolbar,
+.note-editor.note-airframe .note-toolbar {
+  background-color: #262626 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 8px 12px !important;
+}
+
+.note-editor .note-toolbar .note-btn-group .note-btn {
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-color: transparent !important;
+}
+
+.note-editor .note-toolbar .note-btn-group .note-btn:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+}
+
+.note-editor .note-toolbar .note-btn-group .note-btn.active,
+.note-editor .note-toolbar .note-btn-group .note-btn:focus {
+  background-color: rgba(52, 211, 153, 0.2) !important;
+  color: #34d399 !important;
+}
+
+.note-editor.note-frame .note-editing-area .note-editable,
+.note-editor.note-airframe .note-editing-area .note-editable {
+  background-color: #2d2d2d !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+.note-editor .note-editing-area .note-editable:empty:before {
+  color: rgba(163, 163, 163, 0.6) !important;
+}
+
+.note-editor .note-toolbar .note-dropdown-menu {
+  background-color: #262626 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.note-editor .note-toolbar .note-dropdown-menu .note-btn {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.note-editor .note-toolbar .note-dropdown-menu .note-btn:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+}
+
+.note-editor .note-statusbar {
+  background-color: #1f1f1f !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.note-editor .note-statusbar .note-resizebar {
+  background-color: rgba(52, 211, 153, 0.4) !important;
+}
+
+.note-modal .modal-content {
+  background-color: #262626 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+.note-modal .modal-header,
+.note-modal .modal-footer {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.note-modal .form-control {
+  background-color: #2d2d2d !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+}
+
+.note-modal .form-control:focus {
+  border-color: #34d399 !important;
+  box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.25) !important;
+}

@@ -1,0 +1,182 @@
+/**
+ * PlayStackAlert Plugin - Custom Alert/Modal Library for Web Applications
+ * * @version 1.0.0
+ * @author Play Stack
+ * @company Play Stack Development
+ * @profile https://devkavod.com.br/profile/play-stack
+ * @license MIT or Commercial (Depende da sua licença, use a que for correta)
+ */
+
+.custom-alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 20000;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.custom-alert-modal {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 450px;
+  overflow: hidden;
+
+  transform: scale(0.95);
+  opacity: 0;
+  animation: fadeIn 0.3s forwards cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.custom-alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+
+  padding: 20px;
+}
+
+.custom-alert-header.alert-info {
+  background: #007bff;
+}
+
+.custom-alert-header.alert-success {
+  background: #28a745;
+}
+
+.custom-alert-header.alert-warning {
+  background: #ffc107;
+}
+
+.custom-alert-header.alert-error {
+  background: #dc3545;
+}
+
+.custom-alert-title {
+  font-size: 1em;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.custom-alert-close {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0 5px;
+  transition: color 0.2s;
+}
+
+.custom-alert-close:hover {
+  color: #ffffff9e;
+}
+
+.custom-alert-content {
+  font-size: 1em;
+  color: #555;
+  text-align: center;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+.custom-alert-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.custom-alert-actions button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.custom-alert-actions button.alert-info {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.custom-alert-actions button.alert-success {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.custom-alert-actions button.alert-error {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.custom-alert-actions button.alert-warning {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.custom-alert-actions button:hover {
+  opacity: 0.8;
+}
+
+.custom-alert-cancel {
+  background-color: #ccc;
+  color: #333;
+}
+
+.custom-alert-cancel:hover {
+  background-color: #bbb;
+}
+
+.custom-alert-success .custom-alert-confirm {
+  background-color: #28a745;
+  color: #ffffff;
+}
+.custom-alert-success .custom-alert-confirm:hover {
+  background-color: #218838;
+}
+
+.custom-alert-warning .custom-alert-confirm {
+  background-color: #ffc107;
+  color: #333;
+}
+.custom-alert-warning .custom-alert-confirm:hover {
+  background-color: #e0a800;
+}
+
+.custom-alert-info .custom-alert-confirm {
+  background-color: #007bff;
+  color: #ffffff;
+}
+.custom-alert-info .custom-alert-confirm:hover {
+  background-color: #0056b3;
+}
