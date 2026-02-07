@@ -1,3 +1,13 @@
+/**
+ * Escapa HTML para evitar XSS quando o conteúdo é inserido no DOM.
+ * Deve ser usado em todo conteúdo dinâmico (título, mensagem, textos de botões).
+ */
+function escapeHtml(str) {
+  if (str == null || typeof str !== "string") return "";
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
 
 class PlayStackAlert {
   constructor() {
@@ -37,19 +47,21 @@ show(title, message, type = "info", options = {}) {
       const modal = document.createElement("div");
       modal.classList.add("custom-alert-modal");
 
+      const safeTitle = escapeHtml(title);
+      const safeMessage = escapeHtml(message);
+      const safeConfirm = escapeHtml(settings.confirmButtonText);
+      const safeCancel = escapeHtml(settings.cancelButtonText);
+      const safeType = (typeof type === "string" && /^[a-zA-Z0-9_-]+$/.test(type)) ? type : "info";
+
       modal.innerHTML = `
-                <div class="custom-alert-header alert-${type}">
-                    <h3 class="custom-alert-title">${title}</h3>
-                    <button class="custom-alert-close">&times;</button> 
+                <div class="custom-alert-header alert-${safeType}">
+                    <h3 class="custom-alert-title">${safeTitle}</h3>
+                    <button class="custom-alert-close">&times;</button>
                 </div>
-                <div class="custom-alert-content">${message}</div>
+                <div class="custom-alert-content">${safeMessage}</div>
                 <div class="custom-alert-actions">
-                    <button class="custom-alert-confirm alert-${type}">${settings.confirmButtonText
-        }</button>
-                    ${settings.showCancelButton
-          ? `<button class="custom-alert-cancel">${settings.cancelButtonText}</button>`
-          : ""
-        }
+                    <button class="custom-alert-confirm alert-${safeType}">${safeConfirm}</button>
+                    ${settings.showCancelButton ? `<button class="custom-alert-cancel">${safeCancel}</button>` : ""}
                 </div>
             `;
 
